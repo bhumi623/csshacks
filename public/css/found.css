@@ -1,0 +1,102 @@
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: #fffaf3;
+    background-image: url('../images/back.png');
+    background-repeat: repeat;
+    background-size: auto;
+    color: #333;
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+  .filters {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .filters input,
+  .filters select,
+  .filters button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  
+  .filters button {
+    background: #fd6074;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;}
+  .filters button:hover {
+    background: #eb213c;
+  }
+  
+  .results {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card h4 {
+    margin: 0.2rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .card .color-tag {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+  
+  .floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #fd6074;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+  }
+  
+  .floating-btn:hover {
+    background: #fd6074;
+  }
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Found Post</title>
+  <link rel="stylesheet" href="/public/css/create-post.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Did you lose something?</h1>
+    <form id="postForm">
+      <label for="itemName">Item Name</label>
+      <input type="text" id="itemName" placeholder="e.g. Key" required />
+
+      <label for="itemArea">Location</label>
+      <select id="itemArea" required>
+        <option disabled selected>Select Area</option>
+        <option>Library</option>
+        <option>Canteen</option>
+        <option>Hostel</option>
+        <option>Play Ground</option>
+      </select>
+
+      <label for="itemDate">Date Found</label>
+      <input type="date" id="itemDate" required />
+
+      <label for="itemColor">Dominant Color</label>
+      <input type="color" id="itemColor" />
+
+      <label for="itemDesc">Short Description</label>
+      <textarea id="itemDesc" placeholder="Write a few words..." required></textarea>
+
+      <label for="itemImage">Upload Image</label>
+      <input type="file" id="itemImage" accept="image/*" required />
+
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+
+  <script src="/public/js/create-post.js"></script>
+</body>
+</html>

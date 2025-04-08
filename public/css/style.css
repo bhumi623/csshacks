@@ -1,0 +1,168 @@
+:root {
+  --pink: #fd6074;
+  --soft-yellow: #fffdf6;
+  --bold-black: #1e1e1e;
+}
+h1,h2{font-family: "Rubik Doodle Shadow", cursive;}
+body {
+  
+  font-family: "Poppins", sans-serif;
+  background-image: url('../images/back.png');
+  background-repeat: repeat;
+  background-size: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container {
+  background: #fffdf6;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.register-container input,
+.register-container select {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid #ccc;
+}
+
+.register-container button {
+  background: var(--pink);
+  border: none;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+header {
+  padding: 1rem 2rem;
+  background: var(--soft-yellow);
+  text-align: center;
+}
+
+.post-feed {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.post-img.single {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.post-img.double {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.post-img.double img {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 1.2rem;
+}
+
+.post-content h3 {
+  color: var(--pink);
+  margin-bottom: 0.4rem;}
+
+.post-content p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: #999;}
+
+.floating-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: var(--pink);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-nav i {
+  font-size: 1.4rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.footer-nav i.active {
+  color: var(--pink);
+}
+
+#add{
+  font-size: 32px;
+  padding: 8px; 
+  border-radius: 12px;
+  
+  transition: transform 0.2s ease;
+}
+#add:hover {
+  transform: scale(1.4);
+  
+}
+.material-icons {
+  font-size: 28px;
+  color: #fd6074;
+  padding: 8px;
+  background: #fffdf6;
+  border-radius: 12px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.material-icons:hover {
+  transform: scale(1.1);
+  background: #ffeef1;
+}
+
+

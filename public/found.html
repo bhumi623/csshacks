@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Found Items</title>
+  <link rel="stylesheet" href="/public/css/found.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <h1>Looking for something?</h1>
+    <p>Filters | Shades | Time | Keywords | Maps </p>
+  </div>
+
+  <div class="filters">
+    <input type="text" placeholder="Keyword (e.g., 'wallet', 'bottle')" id="keyword" />
+    <select id="area">
+      <option value="">Select Area</option>
+      <option>Library</option>
+      <option>Canteen</option>
+      <option>Hostel</option>
+    </select>
+    <input type="date" id="foundDate" />
+    <input type="color" id="color" title="Pick a color" />
+    <button onclick="applyFilters()">Filter</button>
+  </div>
+
+  <div class="results" id="results">
+  </div>
+
+  <button class="floating-btn" onclick="goToCreatePost()"><span class="material-icons" id="add">add</span></button>
+
+  <script src="/public/js/found.js"></script>
+</body>
+</html>
+
